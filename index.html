@@ -26,60 +26,49 @@
             <div class="column-3">
                 <h1>Caster Details</h1>
                 <div class="detail-box">
-                    <h1>Caster Name</h1>
-                    <h2>Faction</h2>
 
-                    <img src="http://unsplash.it/200" alt="filler image" />
-                    <table>
-                        <caption>Caster Stats</caption>
-                        <thead>
-                            <tr>
-                                <th>Stat</th>
-                                <th>Stat</th>
-                                <th>Stat</th>
-                                <th>Stat</th>
-                                <th>Stat</th>
-                                <th>Stat</th>
-                                <th>Stat</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-
-
-                            <tr>
-                                <td>num</td>
-                                <td>num</td>
-                                <td>num</td>
-                                <td>num</td>
-                                <td>num</td>
-                                <td>num</td>
-                                <td>num</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <h2>Caster Description</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aperiam omnis distinctio enim, deserunt qui odio possimus exercitationem esse odit quaerat quod, animi voluptatum, necessitatibus magni repudiandae? Numquam ab dicta laborum eius accusantium
-                        perferendis rem ullam voluptatem amet, nihil, totam rerum voluptas aliquam at cupiditate. Voluptatum error autem ullam blanditiis!
-                    </p>
-                    <br>
-                    <hr>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aperiam omnis distinctio enim, deserunt qui odio possimus exercitationem esse odit quaerat quod, animi voluptatum, necessitatibus magni repudiandae? Numquam ab dicta laborum eius accusantium
-                        perferendis rem ullam voluptatem amet, nihil, totam rerum voluptas aliquam at cupiditate. Voluptatum error autem ullam blanditiis!
-                    </p>
-                    <br>
-                    <hr>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aperiam omnis distinctio enim, deserunt qui odio possimus exercitationem esse odit quaerat quod, animi voluptatum, necessitatibus magni repudiandae? Numquam ab dicta laborum eius accusantium
-                        perferendis rem ullam voluptatem amet, nihil, totam rerum voluptas aliquam at cupiditate. Voluptatum error autem ullam blanditiis!
-                    </p>
                 </div>
             </div>
         </div>
     </div>
+    <script id="caster-details" type="text/x-handlebars-template">
+        <h1>{{ name }}</h1>
+        <h2>{{ faction }}</h2>
+
+        <img src="{{ img }}" alt="filler image" />
+        <table>
+            <caption>Caster Stats</caption>
+            <thead>
+                <tr>
+                    <th>Stat</th>
+                    <th>Stat</th>
+                    <th>Stat</th>
+                    <th>Stat</th>
+                    <th>Stat</th>
+                    <th>Stat</th>
+                    <th>Stat</th>
+                </tr>
+            </thead>
+            <tbody>
+
+
+                <tr>
+                    <td>num</td>
+                    <td>num</td>
+                    <td>num</td>
+                    <td>num</td>
+                    <td>num</td>
+                    <td>num</td>
+                    <td>num</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Caster Description</h2>
+        {{ description }}
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
     <script src="index.js"></script>
 </body>
 

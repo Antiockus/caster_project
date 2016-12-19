@@ -80,3 +80,7 @@ tbody td:nth-child(odd) {
 .active-faction {
     background-color: lightskyblue;
 }
+
+.active-caster {
+    background-color: lightsalmon;
+}

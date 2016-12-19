@@ -1,5 +1,7 @@
 var currentFaction = '';
 var currentCaster = '';
+var casterDetailTemplate = $('#caster-details').html();
+var template = Handlebars.compile(casterDetailTemplate);
 
 (function($) {
     var jsonData;
@@ -21,7 +23,7 @@ var currentCaster = '';
 
     $('.container').on('click', '.faction-box', function(e) {
         $('.active-faction').removeClass('active-faction');
-        $(this).toggleClass('active-faction');
+        $(this).addClass('active-faction');
         currentFaction = $(this).text();
         $('.caster-list').empty();
         $.each(jsonData[currentFaction], function(ind, dat) {
@@ -30,9 +32,13 @@ var currentCaster = '';
     });
 
     $('.container').on('click', '.caster-box', function() {
+        $('.active-caster').removeClass('active-caster');
+        $(this).addClass('active-caster');
         currentCaster = $(this).text();
-        console.log(currentCaster);
-
+        // console.log(casterInfo.casters[currentCaster]);
+        var context = casterInfo.casters[currentCaster];
+        var html = template(context);
+        $('.detail-box').html(html);
     });
 
 })(jQuery)
