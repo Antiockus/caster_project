@@ -73,3 +73,10 @@ table {
 tbody td:nth-child(odd) {
     background-color: lightgrey;
 }
+
+
+/*Button backgrounds and modes*/
+
+.active-faction {
+    background-color: lightskyblue;
+}
