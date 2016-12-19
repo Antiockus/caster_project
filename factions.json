@@ -1,16 +1,93 @@
 {
-    "factions": [
-        "Faction_one",
-        "Faction_two",
-        "Faction_three",
-        "Faction_four",
-        "Faction_five",
-        "Faction_six",
-        "Faction_seven",
-        "Faction_eight",
-        "Faction_nine",
-        "Faction_ten",
-        "Faction_eleven"
+    "factions": {
+        "Faction_one": [
+            "caster_one",
+            "caster_two",
+            "caster_three",
+            "caster_four",
+            "caster_five",
+            "caster_six"
+        ],
+        "Faction_two": [
+            "caster_one",
+            "caster_two",
+            "caster_three",
+            "caster_four",
+            "caster_five",
+            "caster_six"
+        ],
+        "Faction_three": [
+            "caster_one",
+            "caster_two",
+            "caster_three",
+            "caster_four",
+            "caster_five",
+            "caster_six"
+        ],
+        "Faction_four": [
+            "caster_one",
+            "caster_two",
+            "caster_three",
+            "caster_four",
+            "caster_five",
+            "caster_six"
+        ],
+        "Faction_five": [
+            "caster_one",
+            "caster_two",
+            "caster_three",
+            "caster_four",
+            "caster_five",
+            "caster_six"
+        ],
+        "Faction_six": [
+            "caster_one",
+            "caster_two",
+            "caster_three",
+            "caster_four",
+            "caster_five",
+            "caster_six"
+        ],
+        "Faction_seven": [
+            "caster_one",
+            "caster_two",
+            "caster_three",
+            "caster_four",
+            "caster_five",
+            "caster_six"
+        ],
+        "Faction_eight": [
+            "caster_one",
+            "caster_two",
+            "caster_three",
+            "caster_four",
+            "caster_five",
+            "caster_six"
+        ],
+        "Faction_nine": [
+            "caster_one",
+            "caster_two",
+            "caster_three",
+            "caster_four",
+            "caster_five",
+            "caster_six"
+        ],
+        "Faction_ten": [
+            "caster_one",
+            "caster_two",
+            "caster_three",
+            "caster_four",
+            "caster_five",
+            "caster_six"
+        ],
+        "Faction_eleven": [
+            "caster_one",
+            "caster_two",
+            "caster_three",
+            "caster_four",
+            "caster_five",
+            "caster_six"
+        ]
 
-    ]
+    }
 }

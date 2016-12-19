@@ -1,0 +1,40 @@
+{
+    "casters": {
+        "caster_one": {
+            "name": "caster_name",
+            "faction": "caster_faction",
+            "img": "http://unsplash.it/200",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aperiam omnis distinctio enim, deserunt qui odio possimus exercitationem esse odit quaerat quod, animi voluptatum, necessitatibus magni repudiandae? Numquam ab dicta laborum eius accusantiumperferendis rem ullam voluptatem amet, nihil, totam rerum voluptas aliquam at cupiditate. Voluptatum error autem ullam blanditiis!"
+        },
+        "caster_two": {
+            "name": "caster_name",
+            "faction": "caster_faction",
+            "img": "http://unsplash.it/200",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aperiam omnis distinctio enim, deserunt qui odio possimus exercitationem esse odit quaerat quod, animi voluptatum, necessitatibus magni repudiandae? Numquam ab dicta laborum eius accusantiumperferendis rem ullam voluptatem amet, nihil, totam rerum voluptas aliquam at cupiditate. Voluptatum error autem ullam blanditiis!"
+        },
+        "caster_three": {
+            "name": "caster_name",
+            "faction": "caster_faction",
+            "img": "http://unsplash.it/200",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aperiam omnis distinctio enim, deserunt qui odio possimus exercitationem esse odit quaerat quod, animi voluptatum, necessitatibus magni repudiandae? Numquam ab dicta laborum eius accusantiumperferendis rem ullam voluptatem amet, nihil, totam rerum voluptas aliquam at cupiditate. Voluptatum error autem ullam blanditiis!"
+        },
+        "caster_four": {
+            "name": "caster_name",
+            "faction": "caster_faction",
+            "img": "http://unsplash.it/200",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aperiam omnis distinctio enim, deserunt qui odio possimus exercitationem esse odit quaerat quod, animi voluptatum, necessitatibus magni repudiandae? Numquam ab dicta laborum eius accusantiumperferendis rem ullam voluptatem amet, nihil, totam rerum voluptas aliquam at cupiditate. Voluptatum error autem ullam blanditiis!"
+        },
+        "caster_five": {
+            "name": "caster_name",
+            "faction": "caster_faction",
+            "img": "http://unsplash.it/200",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aperiam omnis distinctio enim, deserunt qui odio possimus exercitationem esse odit quaerat quod, animi voluptatum, necessitatibus magni repudiandae? Numquam ab dicta laborum eius accusantiumperferendis rem ullam voluptatem amet, nihil, totam rerum voluptas aliquam at cupiditate. Voluptatum error autem ullam blanditiis!"
+        },
+        "caster_six": {
+            "name": "caster_name",
+            "faction": "caster_faction",
+            "img": "http://unsplash.it/200",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aperiam omnis distinctio enim, deserunt qui odio possimus exercitationem esse odit quaerat quod, animi voluptatum, necessitatibus magni repudiandae? Numquam ab dicta laborum eius accusantiumperferendis rem ullam voluptatem amet, nihil, totam rerum voluptas aliquam at cupiditate. Voluptatum error autem ullam blanditiis!"
+        }
+    }
+}
