@@ -8,19 +8,39 @@
     width: 80%;
     margin: 0 auto;
     border: 1px solid black;
+    height: 500px;
 }
 
 .column-1 {
     width: 20%;
     float: left;
+    height: 100%;
+    overflow: scroll;
 }
 
 .column-2 {
     width: 30%;
     float: left;
+    height: 100%;
+    overflow: scroll;
 }
 
 .column-3 {
     width: 50%;
     float: left;
+    height: 100%;
+    overflow: scroll;
+}
+
+.faction-box,
+.caster-box {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-top: 5px;
 }
