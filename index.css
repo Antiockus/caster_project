@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
     width: 80%;
     margin: 0 auto;
@@ -43,4 +52,24 @@
     border: 1px solid grey;
     border-radius: 5px;
     margin-top: 5px;
+}
+
+.detail-box {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+
+tbody td:nth-child(odd) {
+    background-color: lightgrey;
 }
