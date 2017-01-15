@@ -3,38 +3,41 @@ var currentCaster = '';
 var casterDetailTemplate = $('#caster-details').html();
 var template = Handlebars.compile(casterDetailTemplate);
 
-(function($) {
+(function ($) {
     var jsonData;
     var casterInfo;
 
-    $.getJSON('factions.json', function(data) {
+    $.getJSON('factions.json', function (data) {
         jsonData = data.factions;
-        $.each(data.factions, function(ind, dat) {
-            $('.column-1').append('<div class="faction-box"><h2>' + ind + '</h2></div>');
+        $.each(data.factions, function (ind, dat) {
+            $('#factions').append("<option value='" + ind + "' class='faction-box'> " + ind + " </option>");
         });
     });
 
-    $.getJSON('casters.json', function(data) {
+    //SETS THE CASTERINFO VARIABLE TO THE DATA
+    $.getJSON('casters.json', function (data) {
         casterInfo = data;
         // $.each(casterInfo, function(dat, ind) {
         //     console.log(ind.caster_one.name);
         // })
     });
 
-    $('.container').on('click', '.faction-box', function(e) {
-        $('.active-faction').removeClass('active-faction');
-        $(this).addClass('active-faction');
-        currentFaction = $(this).text();
-        $('.caster-list').empty();
-        $.each(jsonData[currentFaction], function(ind, dat) {
-            $('.caster-list').append('<div class="caster-box"><h2>' + dat + '</h2></div>');
+    //THIS ACTION IS FOR WHEN THE USER CLICKS A FACTION
+    //IT POPULATES THE CASTER LIST
+    $('.container').on('change', '#factions', function (e) {
+        // $('.active-faction').removeClass('active-faction');
+        // $(this).addClass('active-faction');
+        currentFaction = $('#factions').val();
+        $('#casters').empty();
+        $.each(jsonData[currentFaction], function (ind, dat) {
+            $('#casters').append('<option class="caster-box" value="' + dat + '">' + dat + '</option>');
         });
     });
 
-    $('.container').on('click', '.caster-box', function() {
-        $('.active-caster').removeClass('active-caster');
-        $(this).addClass('active-caster');
-        currentCaster = $(this).text();
+    $('.container').on('change', '#casters', function () {
+        // $('.active-caster').removeClass('active-caster');
+        // $(this).addClass('active-caster');
+        currentCaster = $('#casters').val();
         // console.log(casterInfo.casters[currentCaster]);
         var context = casterInfo.casters[currentCaster];
         var html = template(context);

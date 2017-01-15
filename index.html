@@ -3,73 +3,88 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Caster Project</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <!--This project is used to illustrate certain skills and concepts. The use, or nonuse of a technology is not indicative of prefernce, but most likely familiarity. Not all excluded tech are unknown, some may not be fitting for the current project. -->
-    <div class="wrapper">
-        <div class="container">
-            <div class="column-1">
-                <h1>Factions</h1>
-                <h2>Pick a Faction</h2>
+<!--This project is used to illustrate certain skills and concepts. The use, or nonuse of a technology is not indicative of prefernce, but most likely familiarity. Not all excluded tech are unknown, some may not be fitting for the current project. -->
+<div class="container">
+    <div class="page-header">
+        <h1>Caster Info Viewer</h1>
+        <p>This is an example of front end functionality. Dummy info is used to avoid any conflicts. Also, json is
+            loaded via ajax requests to json files, but could easily be adjusted for use with a RESTful API.</p>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <select name="factions" id="factions">
+                <option value="" disabled selected>Choose your faction...</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <select name="casters" id="casters">
+                <option value="" disabled selected>Choose your caster...</option>
+            </select>
+        </div>
+        <div class="column-3">
+            <h1>Caster Details</h1>
+            <div class="detail-box">
 
-
-            </div>
-            <div class="column-2">
-                <h1>Casters</h1>
-                <h2>Pick a caster from your faction</h2>
-                <div class="caster-list"></div>
-
-            </div>
-            <div class="column-3">
-                <h1>Caster Details</h1>
-                <div class="detail-box">
-
-                </div>
             </div>
         </div>
     </div>
-    <script id="caster-details" type="text/x-handlebars-template">
-        <h1>{{ name }}</h1>
-        <h2>{{ faction }}</h2>
+</div>
+<script id="caster-details" type="text/x-handlebars-template">
+    <h1 class="text-center">{{ name }}</h1>
+    <h2 class="text-center">{{ faction }}</h2>
 
-        <img src="{{ img }}" alt="filler image" />
-        <table>
-            <caption>Caster Stats</caption>
-            <thead>
-                <tr>
-                    <th>Stat</th>
-                    <th>Stat</th>
-                    <th>Stat</th>
-                    <th>Stat</th>
-                    <th>Stat</th>
-                    <th>Stat</th>
-                    <th>Stat</th>
-                </tr>
-            </thead>
-            <tbody>
-
-
-                <tr>
-                    <td>num</td>
-                    <td>num</td>
-                    <td>num</td>
-                    <td>num</td>
-                    <td>num</td>
-                    <td>num</td>
-                    <td>num</td>
-                </tr>
-            </tbody>
-        </table>
-        <h2>Caster Description</h2>
-        {{ description }}
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
-    <script src="index.js"></script>
+    <img src="{{ img }}" alt="filler image" class="center-block img-responsive"/>
+    <table class="table">
+        <caption>Caster Stats</caption>
+        <thead>
+        <tr>
+            <th>Stat</th>
+            <th>Stat</th>
+            <th>Stat</th>
+            <th>Stat</th>
+            <th>Stat</th>
+            <th>Stat</th>
+            <th>Stat</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>num</td>
+            <td>num</td>
+            <td>num</td>
+            <td>num</td>
+            <td>num</td>
+            <td>num</td>
+            <td>num</td>
+        </tr>
+        </tbody>
+    </table>
+    <h2>Caster Description</h2>
+    {{ description }}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+<script src="index.js"></script>
 </body>
 
 </html>
