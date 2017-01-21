@@ -25,10 +25,11 @@ var template = Handlebars.compile(casterDetailTemplate);
     //THIS ACTION IS FOR WHEN THE USER CLICKS A FACTION
     //IT POPULATES THE CASTER LIST
     $('.container').on('change', '#factions', function (e) {
-        // $('.active-faction').removeClass('active-faction');
-        // $(this).addClass('active-faction');
+        $('.pulse').removeClass('animated pulse infinite');
+        $('.animated').addClass('pulse infinite');
         currentFaction = $('#factions').val();
         $('#casters').empty();
+        $('#casters').append('<option value="" disabled selected>Choose Caster</option>');
         $.each(jsonData[currentFaction], function (ind, dat) {
             $('#casters').append('<option class="caster-box" value="' + dat + '">' + dat + '</option>');
         });
@@ -37,6 +38,7 @@ var template = Handlebars.compile(casterDetailTemplate);
     $('.container').on('change', '#casters', function () {
         // $('.active-caster').removeClass('active-caster');
         // $(this).addClass('active-caster');
+        $('.infinite').removeClass('animated pulse infinite');
         currentCaster = $('#casters').val();
         // console.log(casterInfo.casters[currentCaster]);
         var context = casterInfo.casters[currentCaster];
